@@ -29,7 +29,7 @@ secrets:
 runtime:
   kind: docker
   # Filled in by the release workflow with the pushed image's digest.
-  image: ghcr.io/osintverse-community/ipdata@sha256:0000000000000000000000000000000000000000000000000000000000000000
+  image: ghcr.io/osintverse-community/ipdata@sha256:35c71b96430517c894310391805558801e296d566863442e6bfa50fddcc02137
   platforms: [linux/amd64, linux/arm64]
   command: ["ipdata-lookup", "{ip}"]
   output_format: json
